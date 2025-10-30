@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 2.2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+        body {
+            padding: 20px 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .exercise-title {
+            background: linear-gradient(135deg, #007bff, #6610f2);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .grid-demo div[class*="col-"] {
+            padding: 15px;
+            border: 2px solid #333;
+            margin-bottom: 10px;
+            text-align: center;
+            font-weight: bold;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+        }
+        
+        .separator {
+            background-color: white;
+            padding: 30px;
+            margin: 40px 0;
+            border: 2px dashed #ccc;
+            text-align: center;
+            font-style: italic;
+            color: #666;
+        }
+        
+        .screen-indicator {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(0, 123, 255, 0.9);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        
+        .exercise-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .exercise-section h3 {
+            color: #495057;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #007bff;
+        }
+
+        /* Specific backgrounds for second exercise */
+        .second-exercise .div1 {
+            background-color: lightblue !important;
+        }
+        
+        .second-exercise .div2 {
+            background-color: lightcoral !important;
+        }
+        
+        .second-exercise .div3 {
+            background-color: lightgreen !important;
+        }
+        
+        .second-exercise .div4 {
+            background-color: lightyellow !important;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- Lista <dl> con le classi di colori e loro significato -->
+        <h3>Significato delle classi di colori Bootstrap</h3>
+        <dl>
+            <dt class="text-muted">.text-muted</dt>
+            <dd>Testo con colore grigio tenue, utilizzato per informazioni secondarie o meno importanti.</dd>
+
+            <dt class="text-primary">.text-primary</dt>
+            <dd>Testo con colore primario (solitamente blu), utilizzato per elementi principali o link importanti.</dd>
+
+            <dt class="text-success">.text-success</dt>
+            <dd>Testo con colore verde, utilizzato per messaggi di successo o conferme positive.</dd>
+
+            <dt class="text-info">.text-info</dt>
+            <dd>Testo con colore azzurro/ciano, utilizzato per informazioni neutre o messaggi informativi.</dd>
+
+            <dt class="text-warning">.text-warning</dt>
+            <dd>Testo con colore giallo/arancione, utilizzato per avvisi o situazioni che richiedono attenzione.</dd>
+
+            <dt class="text-danger">.text-danger</dt>
+            <dd>Testo con colore rosso, utilizzato per errori, pericoli o azioni distruttive.</dd>
+
+            <dt class="text-secondary">.text-secondary</dt>
+            <dd>Testo con colore grigio, utilizzato per elementi secondari o di supporto.</dd>
+
+            <dt class="text-white">.text-white</dt>
+            <dd>Testo con colore bianco, utilizzato su sfondi scuri per garantire leggibilità.</dd>
+
+            <dt class="text-dark">.text-dark</dt>
+            <dd>Testo con colore nero/grigio scuro, utilizzato per il testo principale su sfondi chiari.</dd>
+
+            <dt class="text-body">.text-body</dt>
+            <dd>Testo con il colore predefinito del body, solitamente nero o grigio scuro.</dd>
+
+            <dt class="text-light">.text-light</dt>
+            <dd>Testo con colore grigio chiaro, utilizzato su sfondi scuri o per elementi meno evidenti.</dd>
+        </dl>
+
+        <!-- Lista <dl> con colori di sfondo -->
+        <h3>Classi di colori con sfondo modificato</h3>
+        <dl>
+            <dt class="bg-secondary text-white">.bg-secondary</dt>
+            <dd>Sfondo grigio utilizzato per elementi secondari.</dd>
+
+            <dt class="bg-primary text-white">.bg-primary</dt>
+            <dd>Sfondo blu primario per elementi principali.</dd>
+
+            <dt class="bg-success text-white">.bg-success</dt>
+            <dd>Sfondo verde per messaggi di successo.</dd>
+
+            <dt class="bg-info text-white">.bg-info</dt>
+            <dd>Sfondo azzurro per informazioni.</dd>
+
+            <dt class="bg-warning text-dark">.bg-warning</dt>
+            <dd>Sfondo giallo/arancione per avvisi.</dd>
+
+            <dt class="bg-danger text-white">.bg-danger</dt>
+            <dd>Sfondo rosso per errori e pericoli.</dd>
+
+            <dt class="bg-light text-dark">.bg-light</dt>
+            <dd>Sfondo grigio chiaro per elementi meno evidenti.</dd>
+
+            <dt class="bg-dark text-white">.bg-dark</dt>
+            <dd>Sfondo nero/grigio scuro per contrasto elevato.</dd>
+        </dl>
+
+        <!-- Testo con opacità al 50% -->
+        <h3>Testo con opacità al 50%</h3>
+        <p style="opacity: 0.5;">Questo è un testo con opacità al 50%. L'opacità ridotta rende il testo semi-trasparente, utile per elementi in background o disabilitati.</p>
+
+        <!-- Testo bianco con opacità al 50% su sfondo warning -->
+        <h3>Testo bianco con opacità al 50% su sfondo warning</h3>
+        <p class="bg-warning" style="padding: 10px;">
+            <span style="color: white; opacity: 0.5;">Questo è un testo bianco con opacità al 50% su sfondo warning. La combinazione crea un effetto visivo attenuato mantenendo il contrasto.</span>
+        </p>
+    </div>
+</body>
+</html>
+
+
