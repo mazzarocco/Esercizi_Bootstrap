@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTS_3.2 - Immagini e Componenti Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 20px;
+        }
+
+        /* Jumbotron alternative for Bootstrap 5 */
+        .jumbotron-alt {
+            background-color: #17a2b8;
+            padding: 3rem 1.5rem;
+            border-radius: 0.5rem;
+            margin-bottom: 2rem;
+            color: white;
+        }
+
+        .jumbotron-alt h1 {
+            font-weight: 300;
+            font-size: 3.5rem;
+        }
+
+        .jumbotron-alt p {
+            font-size: 1.25rem;
+        }
+
+        /* Circular image floating right */
+        .img-circle-right {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            float: right;
+            margin: 20px 0 20px 20px;
+            object-fit: cover;
+        }
+
+        /* Thumbnail centered */
+        .img-thumbnail-center {
+            display: block;
+            margin: 20px auto;
+            max-width: 300px;
+            width: 100%;
+        }
+
+        /* Rounded image floating left */
+        .img-rounded-left {
+            width: 250px;
+            border-radius: 15px;
+            float: left;
+            margin: 20px 20px 20px 0;
+            object-fit: cover;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        .section {
+            margin-top: 40px;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Header -->
+        <div class="row">
+            <div class="col-12">
+                <h1 class="mb-4">Esercizio BTS_3.2 - Immagini e Componenti</h1>
+            </div>
+        </div>
+
+        <!-- Jumbotron Alternative -->
+        <div id="top"></div>
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron-alt">
+                    <h1 class="display-4">Bellezze della Natura</h1>
+                    <p class="lead">Scopri tre splendide immagini della natura presentate con diversi stili Bootstrap. Scorri verso il basso per vedere le immagini con effetti di posizionamento e bordi particolari.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Images Section -->
+        <div class="row">
+            <div class="col-12">
+                <section class="section">
+                    <h3>Immagini Stilizzate</h3>
+
+                    <!-- Circular floating right -->
+                    <img src="C:\Users\net\Downloads\Esercizi_Bootstrap-BTS_2.2\BTS_3\img\ishowspeed-trying-not-to-laugh-m.png" 
+                         alt="Tramonto al mare" 
+                         class="img-circle-right">
+
+                    <p>La prima immagine è posizionata in un <strong>cerchio</strong> e galleggia a <strong>destra</strong>. Questo effetto è stato realizzato utilizzando <code>border-radius: 50%</code> e <code>float: right</code>. Questo stile è perfetto per creare layout dinamici dove il testo scorre intorno all'immagine.</p>
+
+                    <div class="clearfix"></div>
+
+                                        <!-- Rounded floating left -->
+                    <img src="C:\Users\net\Downloads\Esercizi_Bootstrap-BTS_2.2\BTS_3\img\ishowspeed-trying-not-to-laugh-m.png" 
+                         alt="Spiaggia al tramonto" 
+                         class="img-rounded-left">
+
+                    <p>La seconda immagine ha <strong>bordi arrotondati</strong> e galleggia a <strong>sinistra</strong>. È stata stilizzata con <code>border-radius: 15px</code> e <code>float: left</code>. Questa configurazione consente al testo di circondare l'immagine da destra, creando un layout interessante e visivamente equilibrato.</p>
+
+                    <div class="clearfix"></div>
+
+                    <!-- Thumbnail centered -->
+                    <img src="C:\Users\net\Downloads\Esercizi_Bootstrap-BTS_2.2\BTS_3\img\ishowspeed-trying-not-to-laugh-m.png" 
+                         alt="Montagna verde" 
+                         class="img-thumbnail img-thumbnail-center">
+
+                    <p class="text-center"><em>La terza immagine è centrata e racchiusa in un <strong>thumbnail</strong>. Bootstrap fornisce la classe <code>.img-thumbnail</code> che aggiunge un bordo sottile e un piccolo padding all'immagine.</em></p>
+
+                    <div class="clearfix"></div>
+
+
+                </section>
+            </div>
+        </div>
+
+        <!-- Alert Section -->
+        <div class="row">
+            <div class="col-12">
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <h4 class="alert-heading">Hai finito la galleria!</h4>
+                    <p>Ti è piaciuta questa raccolta di immagini? Puoi tornare all'inizio della pagina cliccando il link sottostante.</p>
+                    <a href="#top" class="alert-link">Torna all'inizio della pagina</a>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Buttons Section -->
+        <div class="row">
+            <div class="col-12">
+                <section class="section">
+                    <h3>Bottoni Outline e Block Level</h3>
+
+                    <div class="mb-4">
+                        <button type="button" class="btn btn-outline-primary btn-block w-100 mb-2">Bottone Outline Primary</button>
+                        <button type="button" class="btn btn-outline-success btn-block w-100 mb-2">Bottone Outline Success</button>
+                        <button type="button" class="btn btn-outline-danger btn-block w-100 mb-2">Bottone Outline Danger</button>
+                    </div>
+
+                    <h4 class="mt-4">Gruppo di Bottoni con Dropdown</h4>
+                    <div class="btn-group w-100" role="group">
+                        <button type="button" class="btn btn-outline-secondary">Bottone 1</button>
+                        <button type="button" class="btn btn-outline-secondary">Bottone 2</button>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Menu Dropdown
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Opzione 1</a></li>
+                                <li><a class="dropdown-item" href="#">Opzione 2</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Opzione 3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
