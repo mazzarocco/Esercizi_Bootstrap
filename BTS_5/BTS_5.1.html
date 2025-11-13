@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasticceria della Nonna - BTS_5.1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">🍪 Pasticceria della Nonna</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#prodotti">Prodotti</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#storia">Storia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contatti">Contatti</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h1 class="display-3 fw-bold text-secondary">Benvenuti alla Pasticceria della Nonna</h1>
+            <p class="lead text-dark mt-3">Dolci fatti con amore dal 1950</p>
+            <button class="btn btn-primary btn-lg mt-4">Scopri i nostri prodotti</button>
+        </div>
+    </section>
+
+    <!-- Sezione Prodotti -->
+    <section id="prodotti" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 text-secondary">I Nostri Biscotti</h2>
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card card-custom h-100">
+                        <img src="https://via.placeholder.com/350x250?text=Biscotti+al+Cioccolato" class="card-img-top" alt="Biscotti al cioccolato">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Biscotti al Cioccolato</h5>
+                            <span class="badge badge-custom">Bestseller</span>
+                            <p class="card-text mt-2">Croccanti biscotti con gocce di cioccolato fondente.</p>
+                            <p class="fw-bold text-secondary">€4.50 / 250g</p>
+                            <button class="btn btn-primary w-100">Aggiungi al carrello</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card card-custom h-100">
+                        <img src="https://via.placeholder.com/350x250?text=Biscotti+alla+Mandorla" class="card-img-top" alt="Biscotti alla mandorla">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Biscotti alla Mandorla</h5>
+                            <span class="badge bg-success">Nuovo</span>
+                            <p class="card-text mt-2">Deliziosi biscotti alle mandorle siciliane.</p>
+                            <p class="fw-bold text-secondary">€5.00 / 250g</p>
+                            <button class="btn btn-primary w-100">Aggiungi al carrello</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card card-custom h-100">
+                        <img src="https://via.placeholder.com/350x250?text=Biscotti+al+Burro" class="card-img-top" alt="Biscotti al burro">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Biscotti al Burro</h5>
+                            <span class="badge bg-info text-dark">Classico</span>
+                            <p class="card-text mt-2">La ricetta tradizionale della nonna.</p>
+                            <p class="fw-bold text-secondary">€4.00 / 250g</p>
+                            <button class="btn btn-primary w-100">Aggiungi al carrello</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Storia -->
+    <section id="storia" class="bg-light py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="text-secondary mb-4">La Nostra Storia</h2>
+                    <p>Dal 1950, la nostra pasticceria porta avanti la tradizione della nonna Maria, che ha iniziato a preparare biscotti artigianali nella sua cucina.</p>
+                    <p>Oggi, dopo tre generazioni, continuiamo a usare le sue ricette originali e ingredienti di prima qualità.</p>
+                    <div class="alert alert-success mt-4" role="alert">
+                        <strong>100% Artigianale</strong> - Tutti i nostri prodotti sono fatti a mano con ingredienti naturali.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/IMG_3903.jpeg" class="img-fluid rounded shadow" alt="Storia">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Contatti -->
+    <section id="contatti" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 text-secondary">Contattaci</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Nome</label>
+                            <input type="text" class="form-control" placeholder="Il tuo nome">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="tua@email.com">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Messaggio</label>
+                            <textarea class="form-control" rows="4" placeholder="Scrivi il tuo messaggio..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Invia Messaggio</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Informazioni</h5>
+                            <p><strong>Indirizzo:</strong> Via dei Biscotti, 10 - Milano</p>
+                            <p><strong>Telefono:</strong> +39 02 1234567</p>
+                            <p><strong>Email:</strong> info@pasticcerianonna.it</p>
+                            <p><strong>Orari:</strong> Lun-Sab: 8:00-19:00</p>
+                            <div class="alert alert-warning mt-3" role="alert">
+                                <strong>Attenzione:</strong> Domenica chiusi
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Pasticceria della Nonna - Tutti i diritti riservati</p>
+            <p class="mt-2">Realizzato con ❤️ e Bootstrap 5</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
